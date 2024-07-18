@@ -64,7 +64,7 @@ class SeleniumMiddleware:
             from selenium import webdriver
 
             self.driver = webdriver.Remote(command_executor=command_executor,
-                                           options=driver_options))
+                                           options=driver_options)
 
     @classmethod
     def from_crawler(cls, crawler):
